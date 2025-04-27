@@ -3,7 +3,7 @@ const inpSearch = document.getElementById("inpSearch")
 const filterSelect = document.getElementById("filterRocket");
 const searchFilter = document.getElementById("searchFilter");
 
-const ULR_BASE = "http://localhost:5010"
+const ULR_BASE = "https://rockethub.onrender.com"
 const URL_CATALOGO = ULR_BASE + "/rockets"
 
 let rocketArray = []

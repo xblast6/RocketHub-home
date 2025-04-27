@@ -1,5 +1,5 @@
 // signup.js
-const BASE_URL     = "http://localhost:5010";
+const BASE_URL     = "https://rockethub.onrender.com";
 const SIGNUP_URL   = `${BASE_URL}/auth/signup`;
 const GOOGLE_URL   = `${BASE_URL}/auth/google`;
 const form         = document.getElementById("signupForm");

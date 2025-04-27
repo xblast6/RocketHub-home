@@ -1,7 +1,7 @@
 const containerCountdown = document.getElementById("containerCountdown")
 const countdownFilter = document.getElementById("countdownFilter")
 
-const ULR_BASE = "http://localhost:5010"
+const ULR_BASE = "https://rockethub.onrender.com"
 const URL_COUNTDOWN = ULR_BASE + "/countdowns"
 
 let countdownArray = []

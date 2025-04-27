@@ -3,7 +3,7 @@ const menuSection = document.getElementById("menuSection")
 const navButtons = document.querySelectorAll(".container-navbar");
 
 const countdownEl = document.getElementById("countdown");
-const ULR_BASE = "http://localhost:5010"
+const ULR_BASE = "https://rockethub.onrender.com"
 const URL_COUNTDOWN = ULR_BASE + "/countdowns"
 
 
@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   function fetchNextCountdown() {
-    fetch("http://localhost:5010/countdowns/nextCountdown")
+    fetch("https://rockethub.onrender.com/countdowns/nextCountdown")
       .then(res => {
         if (!res.ok) throw new Error(res.status);
         return res.json();

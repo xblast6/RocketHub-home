@@ -1,4 +1,4 @@
-const BASE_URL      = "http://localhost:5010";
+const BASE_URL      = "https://rockethub.onrender.com";
 const LOGIN_URL     = `${BASE_URL}/auth/login`;
 const GOOGLE_URL    = `${BASE_URL}/auth/google`;
 const loginForm     = document.getElementById("loginForm");
