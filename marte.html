@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketHub - Marte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&display=swap" rel="stylesheet">
+
+</head>
+<body >
+    <header>
+        <nav>
+            <div class="container-logo-navbar">
+                <a href="index.html"><img src="img/Logo_RocktHub.svg" alt="Logo di RocketHub"></a>
+            </div>
+            <div class="container-navbar">
+                <a href="countdown.html">Countdown</a>
+            </div>
+            <div class="container-navbar">
+                <a href="razzi.html">Razzi</a>
+            </div>
+            <div class="container-navbar">
+                <a href="luna.html">Luna</a>
+            </div>
+            <div class="container-navbar">
+                <a href="marte.html">Marte</a>
+            </div>
+            <div class="container-navbar">
+                <a href="login.html">Login</a>
+            </div>
+            <div class="container-menu-navbar" id="btnMenu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <section class="menu" id="menuSection">
+        <div class="container-menu">
+            <a href="countdown.html">Countdown</a>
+        </div>
+        <div class="container-menu">
+            <a href="razzi.html">Razzi</a>
+        </div>
+        <div class="container-menu">
+            <a href="luna.html">Luna</a>
+        </div>
+        <div class="container-menu">
+            <a href="marte.html">Marte</a>
+        </div>
+        <div class="container-menu">
+            <a href="login.html">Login</a>
+        </div>
+    </section>
+
+    <main>
+        
+        <section class="mars-section">
+            <p class="moon-title">Benvenuto su Marte</p>
+            <div class="container-image-mars">
+                <img src="img/marte/selfie perseverance.jpg" alt="">
+            </div>
+            
+        </section>
+
+        <section class="rover-section">
+            <h2>Rover Spirit:</h2>
+            <div class="container-rover-info">
+                <div id="roverInfo" class="rover-info"></div>
+                <div class="container-rover-img">
+                    <img src="img/marte/spirit 3d marte.jpg" alt="Rover Spirit">
+                </div>
+                
+                
+            </div>
+            <h2>Rover Opportunity:</h2>
+            <div class="container-rover-info">
+                
+                <div class="container-rover-img">
+                    <img src="img/marte/opportunity 3d marte.jpg" alt="Rover Opportunity">
+                </div>
+                <div id="roverInfoOpportunity" class="rover-info"></div>
+            </div>
+            <h2>Rover Curiosity:</h2>
+            <div class="container-rover-info">
+                <div id="roverInfoCuriosity" class="rover-info"></div>
+                <div class="container-rover-img">
+                    <img src="img/marte/curiosity selfie.jpg" alt="Rover Opportunity">
+                </div>
+                
+            </div>
+            <h2>Rover Perseverance:</h2>
+            <div class="container-rover-info">
+                
+                <div class="container-rover-img">
+                    <img src="img/marte/perseverance selfie.webp" alt="Rover Opportunity">
+                </div>
+                <div id="roverInfoPerseverance" class="rover-info"></div>
+            </div>
+        </section>
+        <section class="mars-section">
+            <div class="container-input-user">
+                <p id="maxSolCuriosity">Inserisci un numero per scegliere le foto scattate da curiosity durante quel giorno marziano (sol)</p>
+                <input type="number" name="marsSolCuriosity" id="marsSolCuriosity" placeholder="inserisci un numero...">
+                <button id="btnRoverMars">Invia</button>
+                <div class="container-curiosity-image">
+                    <div class="container-arrow sx invisible" id="sinistra">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div id="roverImage"> </div>
+                    <div class="container-arrow dx invisible" id="destra">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>RocketHub</p>
+        <p>N. Partita IVA: (Placeholder)</p>
+        <p>Telefono: (Placeholder) </p>
+        <p>Indirizzo: (Placeholder)</p>
+        <p>Email: (Placeholder)</p>
+        <p>Made with love da <strong>Alessandro Carnevale</strong></p>
+    </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="script.js"></script>
+<script type="module" src="marte.js"></script>
+</html>

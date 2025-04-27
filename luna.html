@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketHub - Luna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-logo-navbar">
+                <a href="index.html"><img src="img/Logo_RocktHub.svg" alt="Logo di RocketHub"></a>
+            </div>
+            <div class="container-navbar">
+                <a href="countdown.html">Countdown</a>
+            </div>
+            <div class="container-navbar">
+                <a href="razzi.html">Razzi</a>
+            </div>
+            <div class="container-navbar">
+                <a href="luna.html">Luna</a>
+            </div>
+            <div class="container-navbar">
+                <a href="marte.html">Marte</a>
+            </div>
+            <div class="container-navbar">
+                <a href="login.html">Login</a>
+            </div>
+            <div class="container-menu-navbar" id="btnMenu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <section class="menu" id="menuSection">
+        <div class="container-menu">
+            <a href="countdown.html">Countdown</a>
+        </div>
+        <div class="container-menu">
+            <a href="razzi.html">Razzi</a>
+        </div>
+        <div class="container-menu">
+            <a href="luna.html">Luna</a>
+        </div>
+        <div class="container-menu">
+            <a href="marte.html">Marte</a>
+        </div>
+        <div class="container-menu">
+            <a href="login.html">Login</a>
+        </div>
+    </section>
+
+    <main>
+        
+        <section class="interact-moon-section" id="firstViewMoon">
+            <p class="moon-title">Benvenuto sulla Luna!</p>
+            <div class="container-img-moon">
+                <img src="img/luna/Luna_orizzontale.jpg" alt="Immagine della luna dallo spazio">
+            </div>
+            <div class="container-peso-lunare">
+                <div class="user-input">
+                    <p>Calcola il tuo peso sulla luna</p>
+                    
+                    <input type="number" name="userMoonWeight" id="userMoonWeight" placeholder="Inserisci il tuo peso">
+                    <button id="btnCalcWeightMoon">Calcola</button>
+
+                    
+                    <div id="responseUserWeight"></div>
+                </div>
+            </div>
+            <div id="moonDistance">
+
+            </div>
+        </section>
+        <section class="interact-moon-section">
+            <div class="card-moon-interact">
+                <h2>Esplora le fasi lunari</h2>
+                <p>Seleziona un giorno dell'anno e scorri lo slider per vedere com'era nei 15 giorni precedenti e successivi</p>
+                <div>
+                    <label>Seleziona data: <input id="date" type="date"></label>
+                </div>
+                <div>
+                    <label>Scorri ±15 giorni: <input id="slider" type="range" min="-15" max="15" value="0"></label>
+                </div>
+              
+                <img id="moonPhase" alt="fase lunare">
+              
+                <p class="meta" id="meta"></p>
+                <p class="tip"  id="tip"></p>
+            </div>
+        </section>
+        <section class="gallery-moon-section">
+            <div class="container-gallery-nasa" >
+                <h2>Scorri la galleria della nasa</h2>
+                <div class="container-arrow sx" id="sinistra">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div id="galleryNasa"></div>
+                <div class="container-arrow dx" id="destra">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+            </div>
+            
+        </section>
+        <section class="interact-moon-section">
+            <div class="container-img-moon">
+                <img src="img/luna/apollo 16 astronaut jump.jpg" alt="">
+            </div>
+            
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>RocketHub</p>
+        <p>N. Partita IVA: (Placeholder)</p>
+        <p>Telefono: (Placeholder) </p>
+        <p>Indirizzo: (Placeholder)</p>
+        <p>Email: (Placeholder)</p>
+        <p>Made with love da <strong>Alessandro Carnevale</strong></p>
+    </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="script.js"></script>
+<script type="module" src="luna.js"></script>
+</html>

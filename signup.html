@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketHub Registrazione</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container-login">
+        <div class="container-img-login">
+            <img src="img/home/Electron launch.jpg" alt="">
+        </div>
+        <div class="login">
+          <h2>Registrazione</h2>
+            <form id="signupForm" class="login-locale">
+                <div class="container-login-input">
+                    <p for="email">Nome:</p>
+                    <input id="name" name="name" type="text" required placeholder="Inserisci il tuo nome…">
+                  </div>
+                <div class="container-login-input">
+                  <p for="email">Email:</p>
+                  <input id="email" name="email" type="email" required placeholder="Inserisci l'email…">
+                </div>
+                <div class="container-login-input">
+                  <p for="password">Password:</p>
+                  <input id="password" name="password" type="password" required placeholder="Inserisci la password…">
+                </div>
+                <button type="submit" class="btn-login">Registrati</button>
+              </form>
+            <div class="login-google">
+                <div class="container-separatore">
+                    <div class="separatore"></div>
+                    <p>o registrati con</p>
+                    <div class="separatore"></div>
+                </div>
+                <button id="googleSignup" class="btn-login-google">
+                    <ion-icon name="logo-google"></ion-icon>oogle
+                  </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="signup.js"></script>
+</html>

@@ -1,0 +1,1406 @@
+:root {
+  --main-text-color: white;
+  --second-color: #5448c8;
+  --third-color: #283C7A;
+  --fourth-color: #693C6F;
+  --fifth-color: #AA3B64;
+  --size-title: 2.5em;
+  --size-mobile-title: 1.6em;
+  --size-tablet-title:3em;
+  --size-text: 1.2em;
+  --size-mobile-text: 0.8em;
+  --title-font: "Audiowide", sans-serif;
+  --text-font: "Michroma", sans-serif;
+  --border-radius-input: 10pt;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+
+}
+
+html, body, p, h1, h2, h3, h4, h5, h6, ion-icon {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+  
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* NAVBAR - NAVBRA - NAVBAR - */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.container-navbar {
+  padding: 5px 10px;
+  border: 3px solid var(--main-text-color);
+  border-radius: 25pt;
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.container-navbar a {
+    color: var(--main-text-color);
+    font-family: var(--title-font);
+    font-size: var(--size-text);
+    transition: all 0.4s cubic-bezier(.215, .61, .355, 1);
+}
+
+.container-navbar:hover {
+  background-color: var(--main-text-color);
+}
+
+.container-navbar:hover a {
+    color: var(--second-color);
+}
+
+.white {
+  background-color: var(--main-text-color);
+  color: var(--second-color);
+}
+
+.white a {
+  color: var(--second-color);
+}
+
+.container-menu-navbar {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+/* NAVBAR - NAVBRA - NAVBAR - */
+
+/*HOME - HOME - HOME*/
+
+  /* VIDEO - VIDEO - VIDEO*/
+
+.container-video {
+  width: 100%;         
+  aspect-ratio: 16 / 9;
+  max-height: 100vh;
+  position: relative;         
+  
+}
+
+.video-hero {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container-text-hero {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+.hero-text {
+  font-size: var(--size-title);
+  font-family: var(--text-font);
+  color: var(--main-text-color);
+  max-width: 80%;
+}
+
+.container-nav-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:58px;
+  position: absolute;
+  bottom: -18%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 10;  
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  height: 250px;
+  border-radius: 30pt;
+  z-index: 10;
+}
+
+.nav-card:nth-child(1) {
+  background-color: var(--third-color);
+}
+
+.nav-card:nth-child(2) {
+  background-color: var(--second-color);
+}
+
+.nav-card:nth-child(3) {
+  background-color: var(--fourth-color);
+}
+
+.nav-card:nth-child(4) {
+  background-color: var(--fifth-color);
+}
+
+.nav-card p {
+  font-family:  var(--text-font);
+  color: var(--main-text-color);
+  font-size: var(--size-text);
+}
+/* VIDEO - VIDEO - VIDEO*/
+/* IMMAGINI HOME - IMMAGINI HOME - IMMAGINI HOME - */
+.sezione-immaggini-home {
+  height: 100vh;
+}
+
+.container-home-img  {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.container-home-img img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container-text-image {
+  position: absolute;
+  right: 10%;
+  top: 46%;
+}
+
+.container-text-image  {
+  color: var(--main-text-color);
+  font-size: var(--size-title);
+  font-family: var(--text-font);
+}
+
+#nasaImageDay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-nasa-image img {
+  width: 800px;
+  height: 800px;
+  object-fit: contain;
+  border-radius: 10pt;
+  border: 1px solid var(--main-text-color);
+  padding: 0.8em;
+}
+
+#nasaImageDay p {
+  position: absolute;
+  font-family: var(--title-font);
+  font-size: var(--size-title);
+  color: var(--main-text-color);
+  top: 10%;
+  right: 50%;
+  transform: translatex(50%);
+  z-index: 5;
+}
+
+
+/* IMMAGINI HOME - IMMAGINI HOME - IMMAGINI HOME - */
+/* LIVE HOME - LIVE HOME*/
+.container-last-live {
+  position: relative;
+  top: 10%;
+}
+
+/* LIVE HOME - LIVE HOME*/
+/*LOGIN - LOGIN - LOGIN*/
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.container-img-login {
+  max-width: 60vw;
+  height: 100vh;
+}
+
+.container-img-login img {
+  max-width: 60vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.login, .login-locale, .login-google {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--text-font);
+}
+
+.login {
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--second-color);
+}
+
+.login h2 {
+  color: var(--main-text-color);
+  font-family: var(--text-font);
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.login-locale, .login-google {
+  gap: 1em;
+}
+
+.container-login-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.container-login-input p {
+  color: var(--main-text-color);
+  font-size: var(--size-mobile-title);
+  font-family: var(--title-font);
+}
+
+.container-login-input input {
+  width: 30em;
+  height: 3em;
+  font-family: var(--text-font);
+  border-radius: var(--border-radius-input);
+  border: none;
+  padding-left: 1em;
+  color: var(--second-color);
+}
+
+.container-login-input input::placeholder {
+  color: var(--second-color);
+}
+
+.container-separatore {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.separatore {
+  height: 1px;
+  width: 8em;
+  background-color: var(--main-text-color);
+}
+
+.container-separatore p {
+  color: var(--main-text-color);
+  font-size: var(--size-mobile-title);
+}
+
+.btn-login, .btn-login-google {
+  padding: 0.5em 0.9em;
+  background-color: var(--main-text-color);
+  border-radius: 5pt;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--second-color);
+}
+
+.container-singup {
+  margin-top: 1em;
+  color: var(--main-text-color);
+}
+
+.container-singup a{
+  color: var(--main-text-color);
+  text-decoration: underline;
+}
+/*LOGIN - LOGIN - LOGIN*/
+
+/*RAZZI - RAZZI - RAZZI*/
+.background {
+  background-color: whitesmoke;
+  font-family: var(--text-font);
+}
+
+.navbar-background {
+  background-color: var(--second-color);
+}
+
+.title {
+  margin-top: 5em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: var(--second-color);
+  font-size: var(--size-title);
+  z-index: 5;
+}
+
+#searchFilter {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container-search input{
+  color: var(--second-color);
+  width: 20em;
+  height: 3em;
+  border-radius: var(--border-radius-input);
+  padding-left: 1em;
+  border: 1px solid var(--second-color);
+}
+
+.container-search input::placeholder {
+  color: var(--second-color);
+}
+
+.container-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.container-filter select {
+  width: 8em;
+  height: 3em;
+  border-radius: var(--border-radius-input);
+  padding-left: 0.5
+  em;
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+}
+
+#containerCatalogo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2em;
+  flex-wrap: wrap;
+  padding: 3em;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.card-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  height: 750px;
+  padding: 1em;
+  border-radius: 10pt;
+  transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+  gap: 0.5em;
+}
+
+.card-catalogo:hover {
+  box-shadow: 2px 2px 5px 2px #5548c83a;
+}
+
+.container-rocket-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.rocket-name {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  
+}
+
+.container-img-rocket {
+  height: 600px;
+}
+
+.container-img-rocket img {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5pt;
+}
+/* DETTAGLI RAZZI - DETAGLI RAZZI*/
+.rocket-card-detail {
+  margin-top: -5em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5em;
+}
+
+#btnBack {
+  border-radius: var(--border-radius-input);
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: var(--size-text);
+  background-color: var(--second-color);
+  border: none;
+  color: var(--main-text-color);
+}
+
+.card-rocket-detail {
+  font-weight: bold;
+  font-size: var(--size-text);
+}
+
+.card-rocket-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.container-logo-card {
+  width: auto;
+  height: 100px;
+}
+
+.container-logo-card img {
+  width: 400px;
+  object-fit: cover;
+}
+
+.stages {
+  margin-bottom: 1em;
+}
+
+.stage-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.2em;
+  margin-bottom: 1em;
+}
+
+.stage-info strong {
+  color: var(--second-color);
+}
+
+/*RAZZI - RAZZI - RAZZI*/
+/* COUNTDOWN - COUNTDOWN - COUNTDOWN*/
+.countdown-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3em;
+  gap: 2em;
+}
+
+#containerCountdown {
+  align-self: self-start;
+}
+
+.container-countdown-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  border-bottom: 1px solid var(--second-color);
+  width: 60em;
+}
+
+.container-info-countdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.container-difference-time-countdown {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  
+}
+
+.container-info-countdown strong{
+  color: var(--second-color);
+}
+
+.container-interact-reaction {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.btn-reaction-toggle {
+  width: 15em;
+  height: 3em;
+  border-radius: var(--border-radius-input);
+  background-color: var(--second-color);
+  color: var(--main-text-color);
+  font-family: var(--text-font);
+  cursor: pointer;
+}
+
+.container-reactions {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-left: 0.5em;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  max-width: 500px; 
+}
+
+.reactions {
+  padding: 0.2em 0.5em;
+  border: 1px dashed var(--second-color);
+  border-radius: var(--border-radius-input);
+  cursor: pointer;
+}
+/* COUNTDOWN - COUNTDOWN - COUNTDOWN*/
+
+
+/* MOON - MOON - MOON*/
+#firstViewMoon {
+  position: relative;
+}
+
+.moon-title {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 5;
+  color: var(--main-text-color);
+  font-size: var(--size-title);
+  font-family: var(--title-font);
+}
+
+.container-img-moon {
+  height: 100vh;
+ 
+}
+
+.container-img-moon img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-peso-lunare {
+  position: absolute;
+  top: 30%;
+  transform: translateY(50%);
+  left: 5%;
+  color: var(--main-text-color);
+  font-family: var(--text-font);
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.container-peso-lunare input {
+  width: 20em;
+  height: 3em;
+  border-radius: var(--border-radius-input);
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+  padding-left: 0.5em;
+}
+
+.container-peso-lunare input::placeholder {
+  color: var(--second-color);
+  
+}
+
+#btnCalcWeightMoon {
+  background-color: var(--second-color);
+  padding: 0.5em 1em;
+  border-radius: var(--border-radius-input);
+  border: none;
+  color: var(--main-text-color);
+  width: 40%;
+}
+
+.interact-moon-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.card-moon-interact {
+  align-items: center;
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  top: -10%;
+  right: 50%;
+  transform: translateX(50%);
+  color: var(--main-text-color);
+}
+
+.gallery-moon-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.container-gallery-nasa {
+  position: relative;
+  color: var(--main-text-color);
+  font-family: var(--text-font);
+  padding: 1em;
+}
+
+.container-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateX(50%);
+  font-size: var(--size-mobile-title);
+  padding: 0.3em;
+  border: 1px solid var(--second-color);
+  border-radius: var(--border-radius-input);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--second-color);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.container-arrow ion-icon {
+  margin: 0;
+}
+
+.dx {
+  right: 5%;
+}
+
+.sx {
+  left: 1%;
+}
+
+#galleryNasa {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+
+.card-gallery-nasa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em;
+  border: 1px solid var(--second-color);
+  border-radius: var(--border-radius-input);
+}
+
+.card-gallery-nasa img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: var(--border-radius-input);
+}
+
+/* MOON - MOON - MOON*/
+/*MARS - MARRS - MARS*/
+.mars-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #c4945ea4;
+  color: var(--main-text-color);
+  font-family: var(--text-font);
+}
+
+.container-image-mars {
+  height: 100vh;
+  width: 100%;
+}
+
+.container-image-mars img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-rover-mars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-image: url("");
+}
+
+.top {
+  padding-top: 5em;
+}
+
+.container-input-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-top: 2em;
+}
+
+.container-input-user input, .container-input-user select, #btnRoverMars {
+  width: 15em;
+  height: 2em;
+  border-radius: 5pt;
+  border: 1px solid var(--second-color);
+}
+
+#btnRoverMars {
+  border-radius: 5pt;
+  border: 1px solid var(--second-color);
+  background-color: var(--second-color);
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+
+
+.card-rover-image {
+  position: absolute;
+  top: 0; left: 0;
+  max-width: 750px;
+  max-height: 750px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-rover-image.active {
+  display: flex;
+} 
+
+
+
+.card-rover-image img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10pt;
+  
+}
+
+.rover-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c4945ea4;
+  font-family: var(--text-font);
+  gap: 2em;
+}
+
+.rover-section h2 {
+  font-family: var(--title-font);
+  font-size: var(--size-title);
+}
+
+.container-rover-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.rover-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  font-size: var(--size-text);
+  color: var(--main-text-color);
+}
+
+.rover-info strong {
+  color: var(--second-color);
+}
+
+.container-curiosity-image {
+  position: relative;
+  overflow: hidden;
+  padding: 1em;
+  border: 1px solid var(--main-text-color);
+  border-radius: 10pt;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.container-rover-img {
+  width: 500px;
+  height: 500px;
+}
+
+.container-rover-img img {
+  width: 500px;
+  height: 500px;
+  border-radius: var(--border-radius-input);
+  object-fit: cover;
+  object-position: top;
+}
+
+.spinner {
+  border: 8px solid rgba(255,255,255,0.2);
+  border-top: 8px solid var(--second-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 3em auto; /* lo centri orizzontalmente e un po’ di margine */
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/*MARS - MARRS - MARS*/
+/*FOOTER - FOOTER - FOOTER*/
+  footer {
+    padding: 1em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: var(--text-font);
+    font-size: var(--size-text);
+    color: var(--main-text-color);
+  }
+/*FOOTER - FOOTER - FOOTER*/
+
+
+/*LAPTOP - LAPTOP LAPTOP*/
+@media screen and (min-width: 1200px) and (max-width: 1660px) {
+
+  .nav-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nav-card img {
+    width: 100px;
+  }
+
+  .nav-card p {
+    font-size: var(1em);
+  }
+
+  .container-text-image {
+    position: absolute;
+    right: 5%;
+    top: 46%;
+  }
+
+  .container-text-image {
+    font-size: var(--size-mobile-title);
+  }
+
+  .container-peso-lunare {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+/*LAPTOP - LAPTOP LAPTOP*/
+/*TABLET - TABLET - TABLET*/
+@media screen and (max-width: 1200px){
+  nav {
+    justify-content: space-between;
+    padding: 2em 3em;
+  }
+
+  .container-navbar {
+    display: none;
+  }
+
+ .container-menu-navbar {
+  display: block;
+  font-size: var(--size-tablet-title);
+  color: var(--main-text-color);
+  }
+
+  .menu {
+    position: fixed;
+    top:0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(.215, .61, .355, 1);
+    transform: translateY(-100vh);
+  }
+
+  .aperto {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+  
+  .container-menu a {
+    color: var(--main-text-color);
+    font-family: var(--title-font);
+    font-size: 2.5em;
+  }
+  /*HOME - HOME - HOME*/
+  /* VIDEO - VIDEO - VIDEO*/
+
+  .container-video {
+    margin: 0;
+    width: 100%;
+    height: 100vh;      
+    max-width: none;       
+    max-height: none;       
+    aspect-ratio: 90/187;   
+    box-sizing: border-box;     
+  }
+
+  .video-hero {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: center;
+  }
+
+  .container-text-hero {
+    left: 0;
+    top: 85%;
+    background-color: rgba(0, 0, 0, 0.473);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em;
+    width: 100%;
+  }
+
+  .hero-text {
+    font-size: var(--size-mobile-title);
+  }
+
+  .container-nav-card {
+    display: none;
+  }
+    /* VIDEO - VIDEO - VIDEO*/
+    /* IMG HOME - IMG HOME*/
+    .container-text-image {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      top: 70%;
+    }
+  
+    .container-text-image {
+      font-size: var(--size-mobile-title);
+    }
+
+    .container-nasa-image img {
+      width: 600px;
+      height: 600px;
+    }
+
+    #nasaImageDay p {
+      text-align: center;
+    }
+    /* IMG HOME - IMG HOME*/
+
+    /*LOGIN - login*/
+    .container-img-login {
+      display: none;
+    }
+
+    .login {
+      justify-content: start;
+      padding-top: 20em;
+    }
+    /*LOGIN - login*/
+    /*RAZZI - RAZZI*/
+    .navbar-background {
+      height: 8em;
+    }
+
+    .card-catalogo {
+      box-shadow: 2px 2px 5px 2px #5548c83a;
+      width: 350px;
+      height: 650px;
+    }
+
+    .container-img-rocket {
+      height: 500px;
+    }
+    
+    .container-img-rocket img {
+      height: 500px;
+      width: 310px;
+      object-fit: cover;
+      border-radius: 5pt;
+    }
+    .rocket-name {
+      gap: 0.5em;
+    }
+
+    .rocket-card-detail {
+      align-items: center;
+    }
+    /* RAZZI - RAZZI - RAZZI*/
+    /*COUNTDOWN - COUNTDOWN*/
+    .countdown-section {
+      padding: 0.8em;
+    }
+
+    .container-countdown-box {
+      width: 45em;
+    }
+    /*COUNTDOWN - COUNTDOWN*/
+    /*MOON - MOON - MOON*/
+    .container-peso-lunare {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .interact-moon-section {
+      margin-top: -1px;
+    }
+
+    .card-moon-interact p {
+      max-width: 80%;
+    }
+
+    /*MARS - MARS - MARS*/
+
+    .mars-section {
+      padding: 0.1em;
+    }
+
+    .container-rover-info {
+      flex-direction: column;
+      max-width: 100%;
+      font-size: var(--size-mobile-text);
+    }
+
+    
+    .container-image-mars img {
+      object-position: right;
+    }
+
+    /*MARS - MARS - MARS*/
+}
+
+/* SMARTPHONE - SMARTPHONE*/
+@media screen and (max-width: 480px) {
+  
+
+  nav {
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .container-navbar {
+    display: none;
+  }
+
+ .container-menu-navbar {
+  display: block;
+  font-size: var(--size-title);
+  color: var(--main-text-color);
+  }
+
+  .menu {
+    position: fixed;
+    top:0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(.215, .61, .355, 1);
+    transform: translateY(-100vh);
+  }
+
+  .aperto {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+  
+  .container-menu a {
+    color: var(--main-text-color);
+    font-family: var(--title-font);
+    font-size: 2.5em;
+  }
+  /*HOME - HOME - HOME*/
+  /* VIDEO - VIDEO - VIDEO*/
+
+  .container-video {
+    margin: 0;
+    width: 100%;
+    height: 100%;      
+    max-width: none;       
+    max-height: none;       
+    aspect-ratio: 90/187;   
+    box-sizing: border-box;     
+  }
+
+  .video-hero {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: center;
+  }
+
+  .container-text-hero {
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em;
+    width: 100%;
+  }
+
+  .hero-text {
+    font-size: var(--size-mobile-title);
+  }
+
+  .container-nav-card {
+    display: none;
+  }
+    /* VIDEO - VIDEO - VIDEO*/
+        /* IMG HOME - IMG HOME*/
+
+    .container-text-image {
+      font-size: 1em;
+      top: 20%;
+    }
+
+    .container-nasa-image img {
+      width: 350px;
+      height: 350px;
+    }
+
+    #nasaImageDay p {
+      font-size: var(--size-text);
+    }
+    /* IMG HOME - IMG HOME*/
+
+
+    /*LOGIN - login*/
+    .container-img-login {
+      display: none;
+    }
+
+    .login {
+      justify-content: start;
+      padding: 10em 2em;
+    }
+
+    .container-login-input p {
+      font-size: 1em;
+    }
+
+    .container-login-input input {
+      width: 25em;
+      height: 2.5em;
+    }
+
+    .separatore {
+      width: 6em;
+    }
+
+    .container-separatore p {
+      font-size: var(--size-mobile-text);
+    }
+    /*LOGIN - login*/
+    /*RAZZI - RAZZI */
+    .navbar-background {
+      height: 6em;
+    }
+
+    .navbar-background nav {
+      justify-content: space-between;
+      padding: 1em;
+    }
+
+    .title {
+      margin-top: 4em;
+    }
+
+    #searchFilter {
+      flex-direction: column;
+      gap: 1em;
+    }
+    
+    .container-filter select {
+      padding-left: 0.3em;
+    }
+        /*RAZZI - RAZZI */
+        /*COUNTDOWN - COUNTDOWN*/
+        .countdown-section {
+          padding: 0.5em;
+        }
+
+        .container-countdown-box {
+          width: 23em;
+        }
+
+        .container-difference-time-countdown {
+          flex-direction: column;
+          align-items: start;
+        }
+
+        .container-info-countdown p, .countdown-timer {
+          font-size: var(--size-mobile-text);
+        }
+
+        .container-reactions {
+          flex-direction: column;
+          display: none;
+        }
+
+        .show {
+          display: block;
+        }
+
+        .container-interact-reaction {
+          flex-direction: column;
+        }
+        /*COUNTDOWN - COUNTDOWN*/
+        /* MOON - MOON - MOON*/
+        .card-moon-interact {
+          width: 90%;
+        }
+
+        .card-moon-interact img {
+          width: 90%;
+        }
+
+        .card-gallery-nasa img {
+          width: 250px;
+          height: 250px;
+        } 
+        /*MARS - MARS - MARS*/
+.rover-section h2 {
+  font-size: var(--size-mobile-title);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+        .container-image-mars img {
+          object-position: center;
+        }
+
+        .container-rover-img {
+          width: 300px;
+          height: 300px;
+        }
+
+       .container-rover-img img {
+        width: 300px;
+        height: 300px;
+        
+       }
+
+
+  .container-rover-info {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+ 
+  .container-input-user input,
+  #btnRoverMars {
+    width: 100%;
+  }
+
+  
+  .container-curiosity-image {
+    width: 100%;
+    height: auto;
+    padding: 0.5em;
+  }
+
+
+  .card-rover-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+}

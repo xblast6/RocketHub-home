@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketHub Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-logo-navbar">
+                <a href="index.html"><img src="img/Logo_RocktHub.svg" alt="Logo di RocketHub"></a>
+            </div>
+            <div class="container-navbar">
+                <a href="countdown.html">Countdown</a>
+            </div>
+            <div class="container-navbar">
+                <a href="razzi.html">Razzi</a>
+            </div>
+            <div class="container-navbar">
+                <a href="luna.html">Luna</a>
+            </div>
+            <div class="container-navbar">
+                <a href="marte.html">Marte</a>
+            </div>
+            <div class="container-navbar">
+                <a href="login.html">Login</a>
+            </div>
+            <div class="container-menu-navbar" id="btnMenu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <section class="menu" id="menuSection">
+        <div class="container-menu">
+            <a href="countdown.html">Countdown</a>
+        </div>
+        <div class="container-menu">
+            <a href="razzi.html">Razzi</a>
+        </div>
+        <div class="container-menu">
+            <a href="luna.html">Luna</a>
+        </div>
+        <div class="container-menu">
+            <a href="marte.html">Marte</a>
+        </div>
+        <div class="container-menu">
+            <a href="login.html">Login</a>
+        </div>
+    </section>
+
+    <main id="main">
+        <section class="sezione-video">
+            <div class="container-video">
+                <video src="https://res.cloudinary.com/dncdwuq9u/video/upload/v1744985574/qn5tw5exgmcdtfy8cmsw.mp4" class="video-hero" autoplay muted loop></video>
+                <div class="container-text-hero">
+                    <p class="hero-text">PER ASPERA AD ASTRA</p>
+                </div>
+                <div class="container-nav-card">
+                    <a href="razzi.html" class="nav-card">
+                        <p>Catalago razzi</p>
+                        <img src="img/station.svg" alt="Icona di un razzo">
+                    </a>
+                    <a href="countdown.html" class="nav-card">
+                        <p>Countdown</p>
+                        <img src="img/countdown.svg" alt="Icona di un countdown">
+                    </a>
+                    <a href="luna.html" class="nav-card">
+                        <p>Esplora la Luna</p>
+                        <img src="img/Mask group.svg" alt="Icona della Luna">
+                    </a>
+                    <a href="marte.html" class="nav-card">
+                        <p>Esplora Marte</p>
+                        <img src="img/Marte.svg" alt="Icona di Marte">
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="sezione-immaggini-home">
+            <div class="container-home-img">
+                <img src="img/home/crew_Dragon_Space.jpg" alt="Navicella Crew Dragon nello spazio intorno alla terra">
+                <div class="container-text-image">
+                    <p>Prossimo countdown:</p>
+                    <div id="countdown">
+                        <span id="days">0</span>d
+                        <span id="hours">00</span>h
+                        <span id="minutes">00</span>m
+                        <span id="seconds">00</span>s
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="interact-moon-section" id="nasaImageDay">
+            <p>Immagine del giorno dalla Nasa</p>
+        </section>
+        <section class="sezione-immaggini-home">
+            <div class="container-home-img">
+                <img src="img/home/Electron launch.jpg" alt="Navicella Crew Dragon nello spazio intorno alla terra">
+                <div class="container-last-live">
+                    <h2>Live del prossimo lancio</h2>
+                    <div id="liveStreamContainer">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>RocketHub</p>
+        <p>N. Partita IVA: (Placeholder)</p>
+        <p>Telefono: (Placeholder) </p>
+        <p>Indirizzo: (Placeholder)</p>
+        <p>Email: (Placeholder)</p>
+        <p>Made with love da <strong>Alessandro Carnevale</strong></p>
+    </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="script.js"></script>
+<script type="module" src="nasa.js"></script>
+</html>
